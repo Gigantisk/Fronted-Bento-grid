@@ -11,21 +11,223 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: arial, sans-serif;
+  font-family: "dm sans", arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1, h2, h3 {
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 500;
+  line-height: 1;
   margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
   margin-top: 0;
+  font-size: 0.875rem;
 }
 
 a, a:visited, a:active {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+.title-center {
+  margin-bottom: 1.5rem;
+}
+
+.left-up-container h2 {
+  letter-spacing: -2px;
+}
+
+.left-up-container span {
+  color: hsl(256, 67%, 59%);
+  font-style: italic;
+}
+
+.left-down-container h2 {
+  margin-bottom: 2.125rem;
+}
+
+.tenx-span {
+  color: hsl(39, 100%, 71%);
+}
+
+.faster-span {
+  font-style: italic;
+}
+
+.pourcet-title {
+  margin-bottom: 0.625rem;
+}
+
+.square-container-p {
+  margin-bottom: 1.75rem;
+}
+
+.right-container-p {
+  margin-top: 1.125rem;
+}
+
+/* --nom-background-color, --nom-text-color */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 48rem) {
+  .main-container {
+    display: flex;
+    margin-top: 1.875rem;
+    position: relative; /* position relative to position the uppper right box */
+    width: 895px;
+  }
+  div {
+    border-radius: 0.75rem;
+    align-content: center;
+  }
+  .left-column,
+  .centre-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5625rem;
+    position: absolute;
+  }
+  /* debut container gauche */
+  .left-column {
+    left: 0;
+  }
+  .left-up-container {
+    background-color: hsl(31, 66%, 93%);
+    padding: 1.5rem;
+    width: 12.8125rem;
+    height: 20.625rem;
+    margin-bottom: 1.5625rem;
+  }
+  .left-up-container img {
+    height: 4.375rem;
+  }
+  .left-down-container {
+    background-color: hsl(39, 100%, 71%);
+    width: 12.8125rem;
+    height: 21.5625rem;
+    padding: 1rem 1.25rem;
+  }
+  .left-down-container h2 {
+    width: 10rem;
+  }
+  .left-down-container img {
+    height: 11.25rem;
+  }
+  /* fin container gauche */
+  /* debut container centre */
+  .center-up-double {
+    display: flex;
+    flex-direction: row;
+  }
+  .centre-up-container {
+    background-color: hsl(256, 67%, 59%);
+    text-align: center;
+    height: 15rem;
+    width: 27.1875rem;
+    color: white;
+    margin-bottom: 1.5625rem;
+  }
+  .title-center {
+    width: 23.75rem;
+    margin: 1.125rem auto;
+  }
+  .centre-up-container img {
+    height: 1.5rem;
+  }
+  .center-double-container {
+    display: flex;
+    margin-bottom: 1.5625rem;
+  }
+  .square-container,
+  .square-container-right {
+    height: 12.8125rem;
+    width: 12.8125rem;
+    margin-right: 1.5625rem;
+    background-color: white;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  .square-container-right {
+    background-color: hsl(39, 100%, 71%);
+  }
+  .square-container img {
+    height: 3.375rem;
+    margin-bottom: 0.75rem;
+  }
+  .square-container-right img {
+    height: 8.125rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-center-bottom {
+    height: 3.125rem;
+  }
+  .bottom-double-container {
+    display: flex;
+  }
+  .large-bottom-right {
+    height: 12.8125rem;
+    width: 27.1875rem;
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1.125rem;
+  }
+  .large-bottom-right img {
+    height: 10.625rem;
+  }
+  /* fin container centre*/
+  /* droite */
+  .right-column {
+    position: absolute;
+    right: 0;
+  }
+  .inside-right-container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(254, 88%, 90%);
+    width: 12.8125rem;
+    height: 29.375rem;
+    overflow: hidden;
+    padding-left: 1.625rem;
+    padding-top: 1.875rem;
+  }
+  .test {
+    width: 17.5rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

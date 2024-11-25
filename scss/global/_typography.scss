@@ -1,13 +1,64 @@
+@use '../util' as u;
+
 h1, h2, h3 {
-    font-weight: 700;
-    line-height: 1.1;
+    font-weight: 500;
+    line-height: 1;
     margin-top: 0;
+    margin-bottom: u.rem(20);
+}
+h1 {
+    font-size: u.rem(48);
+}
+
+h2 {
+    font-size: u.rem(30);
+}
+
+h3 {
+    font-size: u.rem(24);
 }
 
 p {
     margin-top: 0;
+    font-size: u.rem(14);
 }
 
 a, a:visited, a:active {
     text-decoration: none;
+}
+
+.title-center {
+    margin-bottom: u.rem(24)
+}
+
+.left-up-container h2 {
+    letter-spacing: -2px;
+}
+
+.left-up-container span {
+    color: hsl(256, 67%, 59%);
+    font-style: italic;
+}
+
+.left-down-container h2 {
+    margin-bottom: u.rem(34);
+}
+
+.tenx-span {
+    color: hsl(39, 100%, 71%);
+}
+.faster-span {
+    font-style: italic;
+}
+
+.pourcet-title {
+    margin-bottom: u.rem(10);
+}
+
+.square-container-p {
+    margin-bottom: u.rem(28);
+}
+
+.right-container-p {
+    margin-top: u.rem(18);
 }
